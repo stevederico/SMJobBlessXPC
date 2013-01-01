@@ -318,6 +318,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "Mac Developer: Stephen Derico (RGS2F76K98)";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -326,6 +327,7 @@
 				INFOPLIST_FILE = "SMJobBlessApp/SMJobBlessApp-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				PRODUCT_NAME = SMJobBlessApp;
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -333,12 +335,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "Mac Developer: Stephen Derico (RGS2F76K98)";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_MODEL_TUNING = G5;
 				INFOPLIST_FILE = "SMJobBlessApp/SMJobBlessApp-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				PRODUCT_NAME = SMJobBlessApp;
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
