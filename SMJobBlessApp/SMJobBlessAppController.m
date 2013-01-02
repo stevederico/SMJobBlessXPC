@@ -113,10 +113,13 @@ Copyright (C) 2011 Apple Inc. All Rights Reserved.
     const char* request = "Hi there, helper service.";
     xpc_dictionary_set_string(message, "request", request);
     
+        NSLog(@"%@",[NSString stringWithFormat:@"Sending request: %s", request]);
+    
     [self appendLog:[NSString stringWithFormat:@"Sending request: %s", request]];
     
     xpc_connection_send_message_with_reply(connection, message, dispatch_get_main_queue(), ^(xpc_object_t event) {
         const char* response = xpc_dictionary_get_string(event, "reply");
+        NSLog(@"%@",[NSString stringWithFormat:@"Received response: %s.", response]);
         [self appendLog:[NSString stringWithFormat:@"Received response: %s.", response]];
     });
 }
